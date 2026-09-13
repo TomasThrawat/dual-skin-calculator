@@ -1,0 +1,40 @@
+<resources>
+    <style name="Theme.DualSkinCalculator" parent="Theme.MaterialComponents.DayNight.NoActionBar" />
+
+    <style name="SciKey">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:background">@color/sci_key</item>
+        <item name="android:textColor">@color/sci_key_text</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <style name="SciKeyOrange" parent="SciKey">
+        <item name="android:background">@color/sci_orange</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="SciKeyPurple" parent="SciKey">
+        <item name="android:background">@color/sci_purple</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="MinimalKey">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:background">@color/minimal_btn</item>
+        <item name="android:textColor">@color/minimal_text</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">0dp</item>
+    </style>
+</resources>

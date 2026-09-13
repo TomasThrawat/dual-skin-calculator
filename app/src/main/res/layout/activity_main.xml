@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="4dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/app_name"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnToggleSkin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🔁 تبديل الواجهة"
+                android:textAllCaps="false"
+                android:background="@color/sci_purple"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/statusView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:textColor="#F5A623"
+            android:textSize="12sp"
+            android:paddingEnd="6dp"
+            android:text="DEG" />
+
+        <EditText
+            android:id="@+id/display"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:gravity="end|center_vertical"
+            android:textSize="28sp"
+            android:padding="12dp"
+            android:background="@color/sci_display_bg"
+            android:textColor="#000000"
+            android:inputType="none"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:id="@+id/resultView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:textColor="#AAAAAA"
+            android:textSize="16sp"
+            android:paddingTop="2dp"
+            android:paddingBottom="6dp"
+            android:paddingEnd="12dp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/llScientific"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/sci_bg"
+                android:padding="4dp">
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                    <Button style="@style/SciKey" android:text="MC" android:tag="ACT:MC" />
+                    <Button style="@style/SciKey" android:text="STO" android:tag="ACT:MSTO" />
+                    <Button style="@style/SciKey" android:text="Hist" android:tag="ACT:HISTORY" />
+                    <Button style="@style/SciKey" android:text="Copy" android:tag="ACT:COPY" />
+                    <Button style="@style/SciKey" android:text="Paste" android:tag="ACT:PASTE" />
+                    <Button style="@style/SciKey" android:text="Help" android:tag="ACT:HELP" />
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                    <Button style="@style/SciKeyOrange" android:text="SHIFT" android:tag="ACT:SHIFT" />
+                    <Button style="@style/SciKeyPurple" android:text="ALPHA" android:tag="ACT:ALPHA" />
+                    <Button style="@style/SciKey" android:text="◀" android:tag="ACT:LEFT" />
+                    <Button style="@style/SciKey" android:text="▶" android:tag="ACT:RIGHT" />
+                    <Button style="@style/SciKey" android:text="MODE" android:tag="ACT:MODE" />
+                    <Button style="@style/SciKey" android:text="2nd" android:tag="ACT:2ND" />
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                    <Button style="@style/SciKey" android:text="CALC" android:tag="ACT:STUB" />
+                    <Button style="@style/SciKey" android:text="∫dx" android:tag="ACT:STUB" />
+                    <Button style="@style/SciKey" android:text="▲" android:tag="ACT:UP" />
+                    <Button style="@style/SciKey" android:text="▼" android:tag="ACT:DOWN" />
+                    <Button style="@style/SciKey" android:text="x⁻¹" android:tag="INS:^(-1)" />
+                    <Button style="@style/SciKey" android:text="Logₓy" android:tag="FUN:logxy" />
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                    <Button style="@style/SciKey" android:text="x/y" android:tag="INS:/" />
+                    <Button style="@style/SciKey" android:text="√x" android:tag="FUN:sqrt" />
+                    <Button style="@style/SciKey" android:text="x²" android:tag="INS:^2" />
+                    <Button style="@style/SciKey" android:text="xʸ" android:tag="INS:^" />
+                    <Button style="@style/SciKey" android:text="Log" android:tag="FUN:log" />
+                    <Button style="@style/SciKey" android:text="Ln" android:tag="FUN:ln" />
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                    <Button style="@style/SciKey" android:text="(-)" android:tag="INS:-" />
+                    <Button style="@style/SciKey" android:text="°′″" android:tag="ACT:STUB" />
+                    <Button style="@style/SciKey" android:text="hyp" android:tag="ACT:HYP" />
+                    <Button style="@style/SciKey" android:text="Sin" android:tag="FUN:sin" />
+                    <Button style="@style/SciKey" android:text="Cos" android:tag="FUN:cos" />
+                    <Button style="@style/SciKey" android:text="Tan" android:tag="FUN:tan" />
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                    <Button style="@style/SciKey" android:text="RCL" android:tag="ACT:MR" />
+                    <Button style="@style/SciKey" android:text="ENG" android:tag="ACT:STUB" />
+                    <Button style="@style/SciKey" android:text="(" android:tag="INS:(" />
+                    <Button style="@style/SciKey" android:text=")" android:tag="INS:)" />
+                    <Button style="@style/SciKey" android:text="S⇌D" android:tag="ACT:STUB" />
+                    <Button style="@style/SciKey" android:text="M+" android:tag="ACT:MPLUS" />
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                    <Button style="@style/SciKey" android:text="7" android:tag="INS:7" />
+                    <Button style="@style/SciKey" android:text="8" android:tag="INS:8" />
+                    <Button style="@style/SciKey" android:text="9" android:tag="INS:9" />
+                    <Button style="@style/SciKeyOrange" android:text="DEL" android:tag="ACT:DEL" />
+                    <Button style="@style/SciKeyOrange" android:text="AC" android:tag="ACT:AC" />
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                    <Button style="@style/SciKey" android:text="4" android:tag="INS:4" />
+                    <Button style="@style/SciKey" android:text="5" android:tag="INS:5" />
+                    <Button style="@style/SciKey" android:text="6" android:tag="INS:6" />
+                    <Button style="@style/SciKey" android:text="×" android:tag="INS:*" />
+                    <Button style="@style/SciKey" android:text="÷" android:tag="INS:/" />
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                    <Button style="@style/SciKey" android:text="1" android:tag="INS:1" />
+                    <Button style="@style/SciKey" android:text="2" android:tag="INS:2" />
+                    <Button style="@style/SciKey" android:text="3" android:tag="INS:3" />
+                    <Button style="@style/SciKey" android:text="+" android:tag="INS:+" />
+                    <Button style="@style/SciKey" android:text="−" android:tag="INS:-" />
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                    <Button style="@style/SciKey" android:text="0" android:tag="INS:0" />
+                    <Button style="@style/SciKey" android:text="." android:tag="INS:." />
+                    <Button style="@style/SciKey" android:text="Exp" android:tag="INS:e" />
+                    <Button style="@style/SciKey" android:text="Ans" android:tag="ACT:ANS" />
+                    <Button style="@style/SciKeyOrange" android:text="=" android:tag="ACT:EQUALS" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llMinimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/minimal_bg"
+                android:padding="4dp"
+                android:visibility="gone">
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                    <Button style="@style/MinimalKey" android:text="AC" android:tag="ACT:AC" />
+                    <Button style="@style/MinimalKey" android:text="DEL" android:tag="ACT:DEL" />
+                    <Button style="@style/MinimalKey" android:text="%" android:tag="INS:%" />
+                    <Button style="@style/MinimalKey" android:text="÷" android:tag="INS:/" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                    <Button style="@style/MinimalKey" android:text="7" android:tag="INS:7" />
+                    <Button style="@style/MinimalKey" android:text="8" android:tag="INS:8" />
+                    <Button style="@style/MinimalKey" android:text="9" android:tag="INS:9" />
+                    <Button style="@style/MinimalKey" android:text="×" android:tag="INS:*" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                    <Button style="@style/MinimalKey" android:text="4" android:tag="INS:4" />
+                    <Button style="@style/MinimalKey" android:text="5" android:tag="INS:5" />
+                    <Button style="@style/MinimalKey" android:text="6" android:tag="INS:6" />
+                    <Button style="@style/MinimalKey" android:text="−" android:tag="INS:-" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                    <Button style="@style/MinimalKey" android:text="1" android:tag="INS:1" />
+                    <Button style="@style/MinimalKey" android:text="2" android:tag="INS:2" />
+                    <Button style="@style/MinimalKey" android:text="3" android:tag="INS:3" />
+                    <Button style="@style/MinimalKey" android:text="+" android:tag="INS:+" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                    <Button style="@style/MinimalKey" android:text="0" android:tag="INS:0" />
+                    <Button style="@style/MinimalKey" android:text="." android:tag="INS:." />
+                    <Button style="@style/MinimalKey" android:text="=" android:tag="ACT:EQUALS" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+</ScrollView>
