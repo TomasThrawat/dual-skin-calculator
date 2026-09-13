@@ -135,34 +135,34 @@
                 </LinearLayout>
 
                 <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
-                    <Button style="@style/SciKey" android:text="7" android:tag="INS:7" />
-                    <Button style="@style/SciKey" android:text="8" android:tag="INS:8" />
-                    <Button style="@style/SciKey" android:text="9" android:tag="INS:9" />
+                    <Button style="@style/SciKeyDigit" android:text="7" android:tag="INS:7" />
+                    <Button style="@style/SciKeyDigit" android:text="8" android:tag="INS:8" />
+                    <Button style="@style/SciKeyDigit" android:text="9" android:tag="INS:9" />
                     <Button style="@style/SciKeyOrange" android:text="DEL" android:tag="ACT:DEL" />
                     <Button style="@style/SciKeyOrange" android:text="AC" android:tag="ACT:AC" />
                 </LinearLayout>
 
                 <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
-                    <Button style="@style/SciKey" android:text="4" android:tag="INS:4" />
-                    <Button style="@style/SciKey" android:text="5" android:tag="INS:5" />
-                    <Button style="@style/SciKey" android:text="6" android:tag="INS:6" />
-                    <Button style="@style/SciKey" android:text="×" android:tag="INS:*" />
-                    <Button style="@style/SciKey" android:text="÷" android:tag="INS:/" />
+                    <Button style="@style/SciKeyDigit" android:text="4" android:tag="INS:4" />
+                    <Button style="@style/SciKeyDigit" android:text="5" android:tag="INS:5" />
+                    <Button style="@style/SciKeyDigit" android:text="6" android:tag="INS:6" />
+                    <Button style="@style/SciKeyDigit" android:text="×" android:tag="INS:*" />
+                    <Button style="@style/SciKeyDigit" android:text="÷" android:tag="INS:/" />
                 </LinearLayout>
 
                 <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
-                    <Button style="@style/SciKey" android:text="1" android:tag="INS:1" />
-                    <Button style="@style/SciKey" android:text="2" android:tag="INS:2" />
-                    <Button style="@style/SciKey" android:text="3" android:tag="INS:3" />
-                    <Button style="@style/SciKey" android:text="+" android:tag="INS:+" />
-                    <Button style="@style/SciKey" android:text="−" android:tag="INS:-" />
+                    <Button style="@style/SciKeyDigit" android:text="1" android:tag="INS:1" />
+                    <Button style="@style/SciKeyDigit" android:text="2" android:tag="INS:2" />
+                    <Button style="@style/SciKeyDigit" android:text="3" android:tag="INS:3" />
+                    <Button style="@style/SciKeyDigit" android:text="+" android:tag="INS:+" />
+                    <Button style="@style/SciKeyDigit" android:text="−" android:tag="INS:-" />
                 </LinearLayout>
 
                 <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
-                    <Button style="@style/SciKey" android:text="0" android:tag="INS:0" />
-                    <Button style="@style/SciKey" android:text="." android:tag="INS:." />
-                    <Button style="@style/SciKey" android:text="Exp" android:tag="INS:e" />
-                    <Button style="@style/SciKey" android:text="Ans" android:tag="ACT:ANS" />
+                    <Button style="@style/SciKeyDigit" android:text="0" android:tag="INS:0" />
+                    <Button style="@style/SciKeyDigit" android:text="." android:tag="INS:." />
+                    <Button style="@style/SciKeyDigit" android:text="Exp" android:tag="INS:e" />
+                    <Button style="@style/SciKeyDigit" android:text="Ans" android:tag="ACT:ANS" />
                     <Button style="@style/SciKeyOrange" android:text="=" android:tag="ACT:EQUALS" />
                 </LinearLayout>
 
